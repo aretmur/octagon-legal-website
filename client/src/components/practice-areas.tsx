@@ -20,7 +20,7 @@ const practiceAreas = [
   },
   {
     icon: Users,
-    title: "Family Lawyer Melbourne",
+    title: "Family Lawyer",
     subtitle: "",
     services: [
       "Divorce & separation",
@@ -34,7 +34,7 @@ const practiceAreas = [
   },
   {
     icon: Building,
-    title: "Immigration Lawyer Melbourne",
+    title: "Immigration Lawyer",
     subtitle: "",
     services: [
       "Visa refusals, cancellations (s 501, s 116), character concerns",
@@ -48,7 +48,7 @@ const practiceAreas = [
   },
   {
     icon: Briefcase,
-    title: "Employment Lawyer\nMelbourne",
+    title: "Employment Lawyer",
     subtitle: "",
     services: [
       "Toxic workplace complaints",
