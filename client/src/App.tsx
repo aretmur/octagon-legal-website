@@ -10,8 +10,16 @@ import Terms from "@/pages/terms";
 import LegalDisclaimer from "@/pages/legal-disclaimer";
 import LogoShowcase from "@/pages/logo-showcase";
 import NotFound from "@/pages/not-found";
+import ComingSoon from "@/pages/coming-soon";
 
 function Router() {
+  // EASY TOGGLE: Change this to true for "Coming Soon" mode
+  const COMING_SOON_MODE = true;
+  
+  if (COMING_SOON_MODE) {
+    return <ComingSoon />;
+  }
+  
   return (
     <Switch>
       <Route path="/" component={Home} />
