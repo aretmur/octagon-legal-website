@@ -4,7 +4,10 @@ export default function ComingSoon() {
       <div className="text-center space-y-8 px-6">
         {/* Logo/Brand */}
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">
+          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wider" style={{ 
+            fontFamily: 'Lato, sans-serif',
+            letterSpacing: '0.15em'
+          }}>
             <span className="text-amber-400">O</span>ctagon Legal
           </h1>
         </div>
@@ -14,10 +17,10 @@ export default function ComingSoon() {
           <h2 className="text-xl md:text-2xl text-slate-300">
             Website Coming Soon
           </h2>
-          <p className="text-slate-400 max-w-md mx-auto">
-            We're working hard to bring you a new legal experience. </p>
- <p></p>           Our professional services will be available shortly.
-          </p>
+          <div className="text-slate-400 max-w-md mx-auto space-y-2">
+            <p>We're working hard to bring you a new legal experience.</p>
+            <p>Our professional services will be available shortly.</p>
+          </div>
         </div>
 
         {/* Footer */}
