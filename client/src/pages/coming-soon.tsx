@@ -15,11 +15,9 @@ export default function ComingSoon() {
             Website Coming Soon
           </h2>
           <p className="text-slate-400 max-w-md mx-auto">
-            We're working hard to bring you a new legal experience.\n\
-            Our professional services will be available shortly.
-          </p>
-        </div>
-
+  <p>We're working hard to bring you a new legal experience.</p>
+  <p>Our professional services will be available shortly.</p>
+</div> 
         {/* Footer */}
         <div className="pt-12 text-slate-500 text-sm">
           <p>&copy; 2025 Octagon Legal. All rights reserved.</p>
