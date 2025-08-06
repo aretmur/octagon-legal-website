@@ -4,7 +4,7 @@ import { Scale, Users, Building, Briefcase, Shield } from "lucide-react";
 const practiceAreas = [
   {
     icon: Scale,
-    title: "Criminal Defence Lawyer",
+    title: "Criminal Law",
     subtitle: "",
     services: [
       "Police interviews & bail applications",
@@ -20,7 +20,7 @@ const practiceAreas = [
   },
   {
     icon: Users,
-    title: "Family Lawyer",
+    title: "Family Law",
     subtitle: "",
     services: [
       "Divorce & separation",
@@ -34,7 +34,7 @@ const practiceAreas = [
   },
   {
     icon: Building,
-    title: "Immigration Lawyer",
+    title: "Immigration Law",
     subtitle: "",
     services: [
       "Visa refusals, cancellations (s 501, s 116), character concerns",
@@ -48,7 +48,7 @@ const practiceAreas = [
   },
   {
     icon: Briefcase,
-    title: "Employment Lawyer",
+    title: "Employment Law",
     subtitle: "",
     services: [
       "Toxic workplace complaints",
