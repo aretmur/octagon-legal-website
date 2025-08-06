@@ -9,7 +9,7 @@ const practiceAreas = [
     services: [
       "Police interviews & bail applications",
       "Summary and indictable offences",
-      "Family violence (both sides - IVOs & breach defence)",
+      "Family violence (IVOs & breach defence)",
       "Sexual offences",
       "White-collar and fraud matters",
       "Traffic offences",
