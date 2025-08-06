@@ -20,7 +20,7 @@ const teamMembers = [
     name: "Aret Muradyan",
     title: "Co-Founder",
     legalTitle: "Barrister & Solicitor",
-    subtitle: "Criminal, Crisis Intervention & Misconduct",
+    subtitle: "Criminal Defence, Crisis Intervention & Misconduct",
     languages: ["English", "Armenian", "Turkish"],
     image: aretImage,
     description: "Aret brings over 30 years of real world experience to the table, both in law enforcement and in the courtroom.\n\nAs a former Victoria Police Sergeant, he understands how the justice system works on the ground and behind the scenes. Aret focuses on criminal defence, police discipline and legal matters affecting first responders, emergency service workers and government employees.\n\nHe's a subject matter expert on use-of-force incidents and workplace disputes in high-pressure environments. Clients value Aret for his calm clear approach and deep understanding of how institutions operate.\n\nHe knows how to cut through red tape, challenge unfair decisions and build strong, strategic defences when your career or reputation is on the line."
@@ -29,10 +29,10 @@ const teamMembers = [
     name: "Friznik Bony",
     title: "Associate",
     legalTitle: "Barrister & Solicitor",
-    subtitle: "Family & Immigration Law",
+    subtitle: "Immigration Law",
     languages: ["English"],
     image: friznikImage,
-    description: "Friznik Bony leads the Family and Immigration Law practice at Octagon Legal, bringing deep expertise, strategic calm, and unwavering client advocacy to two of the most sensitive areas in law. With years of experience navigating the emotional and procedural complexities of migration cases and family disputes, Friznik is known for turning legal obstacles into structured outcomes.\n\nWhether you're facing a high-conflict parenting matter, a property division dispute, or a visa refusal that could separate your family, Friznik brings precision, empathy, and tactical clarity. His grasp of immigration and family legislation — including cross-border custody, partner visas, protection claims, and judicial review — is both practical and cutting-edge.\n\nClients rely on Friznik for his steady guidance, cultural intelligence, and ability to manage pressure. His method is deliberate: assess, plan, act — with no wasted motion. He's calm in court, clear in advice, and relentless in achieving results.\n\nIf your future, your family, or your residency is on the line — Friznik is the name you want leading your case."
+    description: "Friznik Bony leads the Immigration Law practice at Octagon Legal." 
   },
   {
     name: "Estelle Costabile",
@@ -41,7 +41,7 @@ const teamMembers = [
     subtitle: "",
     languages: ["English"],
     image: "/images/IMG_5154_1753926849979.jpg", // Estelle - keeping correct photo
-    description: "Estelle is a Legal Assistant at Octagon Legal and a current Bachelor of Laws student, bringing a sharp intellect, disciplined workflow, and a genuine passion for justice to her role. She supports the firm's criminal, family, and immigration law practices with a strong foundation in legal research, case preparation, and client communication.\n\nEstelle plays a vital role in ensuring matters are organised, deadlines are met, and clients are kept informed and supported throughout their legal journey. Her ability to absorb complex legal material and translate it into practical, actionable support makes her a standout among emerging legal professionals.\n\nDriven, detail-focused, and grounded in real-world legal experience, Estelle is steadily building a future as a capable and confident lawyer — starting with every case file she touches today."
+    description: "Estelle is a Legal Assistant at Octagon Legal and a current Bachelor of Laws student."
   }
 ];
 
