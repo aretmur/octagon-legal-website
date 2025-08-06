@@ -11,7 +11,7 @@ const teamMembers = [
     name: "William Billings",
     title: "Principal",
     legalTitle: "Barrister & Solicitor",
-    subtitle: "Criminal, Admin, and Workplace Law",
+    subtitle: "Criminal Defence, Family Law & Employment Law",
     languages: ["English", "Cantonese", "Mandarin"],
     image: williamImage,
     description: "William Billings isn't your typical lawyer. He's calm under pressure, sharp on the detail and focused on getting results.\n\nWhether it's challenging a weak prosecution, cross-examining a difficult witness, or navigating a complex tribunal matter, William brings a clear head and a steady hand.\n\nClients value his straight talking approach, strategic thinking, and ability to cut through legal noise. He began his legal career at Midwinters Lawyers, working across criminal defence and administrative / employment disputes.\n\nIf you're in a tough spot and need someone who knows how to fight smart — get William to sort out your legal matters."
