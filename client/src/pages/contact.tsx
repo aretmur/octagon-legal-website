@@ -212,10 +212,10 @@ export default function Contact() {
                   >
                     <div className="flex items-center gap-2 mb-2">
                       <Calendar className="w-5 h-5 text-gold" />
-                      <span className="font-bold">In-Depth Consultation</span>
+                      <span className="font-bold">Legal Assessment</span>
                     </div>
                     <p className="text-sm text-gray-600">
-                      30-minute comprehensive consultation - $75 payable prior to consultation to confirm booking
+                      30-minute Legal Assessment - $75 payable prior to consultation to confirm booking
                     </p>
                   </button>
                 </div>
@@ -414,7 +414,7 @@ export default function Contact() {
                       <h4 className="font-semibold text-gray-900">Business Hours</h4>
                       <div className="text-gray-600 space-y-1">
                         <p>Monday - Friday: 8:30 AM - 5:30 PM</p>
-                        <p>Saturday / Sunday: Urgent matters only</p>
+                  
                       </div>
                     </div>
                   </div>
