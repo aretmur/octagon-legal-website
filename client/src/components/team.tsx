@@ -5,7 +5,7 @@ import { X } from "lucide-react";
 const williamImage = "/images/william_1754475178903.png";
 const aretImage = "/images/aretM_1754475261149.PNG"; 
 const friznikImage = "/images/friznik_new.png"; 
-const friznikImage = "";
+const ladyLawyerImage = "/images/ladyLawyer.jpg";
 
 const teamMembers = [
   {
@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Aret Muradyan",
     title: "Co-Founder",
     legalTitle: "Barrister & Solicitor",
-    subtitle: "Criminal Defence, Crisis Intervention & Misconduct",
+    subtitle: "Criminal Defence, Family Law & Personal Injury",
     languages: ["English", "Armenian", "Turkish"],
     image: aretImage,
     description: "Aret brings over 30 years of real world experience to the table, both in law enforcement and in the courtroom.\n\nAs a former Victoria Police Sergeant, he understands how the justice system works on the ground and behind the scenes. Aret focuses on criminal defence, police discipline and legal matters affecting first responders, emergency service workers and government employees.\n\nHe's a subject matter expert on use-of-force incidents and workplace disputes in high-pressure environments. Clients value Aret for his calm clear approach and deep understanding of how institutions operate.\n\nHe knows how to cut through red tape, challenge unfair decisions and build strong, strategic defences when your career or reputation is on the line."
@@ -30,19 +30,19 @@ const teamMembers = [
     name: "Friznik Bony",
     title: "Associate",
     legalTitle: "Barrister & Solicitor",
-    subtitle: "Immigration Law",
+    subtitle: "Civil Litigation & Personal Injury",
     languages: ["English"],
     image: friznikImage,
-    description: "Friznik Bony leads the Immigration Law practice at Octagon Legal." 
+    description: "Friznik Bony leads the Civil Litigation & Personal Injury practice at Octagon Legal." 
   },
   {
-    name: "PLACE HOLDER",
-    title: "POSITION",
-    legalTitle: "",
-    subtitle: "",
+    name: "Penelope Pitstop",
+    title: "Associate",
+    legalTitle: "Barrister & Solicitor",
+    subtitle: "Wills and Estates & Property Law",
     languages: ["English"],
-    image: ""
-    description: ""
+    image: ladyLawyerImage,
+    description: "Wills and Estates & Property Law specialist"
   }
 ];
 
