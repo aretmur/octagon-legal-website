@@ -3,74 +3,98 @@ import { Scale, Users, Building, Briefcase, Shield } from "lucide-react";
 
 const practiceAreas = [
   {
-    icon: Scale,
-    title: "Criminal Law",
-    subtitle: "",
-    services: [
-      "Police interviews & bail applications",
-      "Summary and indictable offences",
-      "Family violence (IVOs & breach defence)",
-      "Sexual offences",
-      "White-collar and fraud matters",
-      "Traffic offences",
-      "Drink and Drug driving",
-      "Drug offences",
-      "Appeals and sentence reductions"
-    ]
-  },
-  {
-    icon: Users,
-    title: "Family Law",
-    subtitle: "",
-    services: [
-      "Divorce & separation",
-      "Parenting disputes and consent orders",
-      "Property and asset division",
-      "Urgent recovery, relocation & risk matters",
-      "Intervention orders linked to family violence",
-      "Binding financial agreements",
-      "Child support disputes"
-    ]
-  },
-  {
-    icon: Building,
-    title: "Immigration Law",
-    subtitle: "",
-    services: [
-      "Visa refusals, cancellations (s 501, s 116), character concerns",
-      "AAT and Court appeals",
-      "Partner, Parent & Family visas",
-      "Skilled migration & Employer-sponsored visas",
-      "Ministerial intervention and exceptional circumstances cases",
-      "Bridging visas and unlawful stay regularisation",
-      "Citizenship applications, refusals and appeals"
-    ]
-  },
-  {
-    icon: Briefcase,
-    title: "Employment Law",
-    subtitle: "",
-    services: [
-      "Toxic workplace complaints",
-      "Unfair dismissal and show cause responses",
-      "Discrimination, bullying, sexual harassment",
-      "Whistleblower protections",
-      "Policy review + legal health checks",
-      "Internal dispute resolution",
-      "Executive-level conduct advice"
-    ]
-  },
-  {
-    icon: Shield,
-    title: "Crisis Intervention &\nHigh-Risk Disputes",
-    subtitle: "This service is available\nvia direct phone contact only.",
-    services: [
-      "PSC interviews, allegations & disciplinary hearings",
-      "Suspensions, stand-downs & show cause responses",
-      "Strategic resignation or payout negotiations",
-      "Representation during systemic reviews",
-      "Support for members under media scrutiny",
-      "Legal navigation of WorkCover or mental health exits"
+    {
+  icon: Scale,
+  title: "Criminal Law",
+  subtitle: "",
+  services: [
+    "Police interviews & bail applications",
+    "Summary and indictable offences",
+    "Family violence (IVOs & breach defence)",
+    "Sexual offences",
+    "White-collar and fraud matters",
+    "Traffic offences",
+    "Drink and Drug driving",
+    "Drug offences",
+    "Appeals and sentence reductions"
+  ]
+},
+{
+  icon: Users,
+  title: "Family Law",
+  subtitle: "",
+  services: [
+    "Divorce & separation",
+    "Parenting disputes and consent orders",
+    "Property and asset division",
+    "Urgent recovery, relocation & risk matters",
+    "Intervention orders linked to family violence",
+    "Binding financial agreements",
+    "Child support disputes"
+  ]
+},
+{
+  icon: Building,
+  title: "Immigration Law",
+  subtitle: "",
+  services: [
+    "Visa refusals, cancellations (s 501, s 116), character concerns",
+    "AAT and Court appeals",
+    "Partner, Parent & Family visas",
+    "Skilled migration & Employer-sponsored visas",
+    "Ministerial intervention and exceptional circumstances cases",
+    "Bridging visas and unlawful stay regularisation",
+    "Citizenship applications, refusals and appeals"
+  ]
+},
+{
+  icon: Briefcase,
+  title: "Employment Law",
+  subtitle: "",
+  services: [
+    "Unfair dismissal and show cause responses",
+    "Discrimination, bullying, sexual harassment",
+    "Whistleblower protections",
+    "Internal dispute resolution",
+    "Executive-level conduct advice"
+  ]
+},
+{
+  icon: Home,
+  title: "Property Law",
+  subtitle: "",
+  services: [
+    "Residential and commercial conveyancing",
+    "Leases and tenancy disputes",
+    "Easements and boundary issues",
+    "Property development and subdivisions",
+    "Title transfers and disputes"
+  ]
+},
+{
+  icon: FileText,
+  title: "Wills & Estates",
+  subtitle: "",
+  services: [
+    "Drafting wills and powers of attorney",
+    "Estate planning and asset protection",
+    "Probate and letters of administration",
+    "Contesting a will",
+    "Executor and trustee advice"
+  ]
+},
+{
+  icon: Gavel,
+  title: "Personal Injury",
+  subtitle: "",
+  services: [
+    "Workplace injury (WorkCover) claims",
+    "Transport accident (TAC) claims",
+    "Public liability claims",
+    "Medical negligence claims",
+    "Institutional abuse claims"
+  ]
+}
     ]
   }
 ];
