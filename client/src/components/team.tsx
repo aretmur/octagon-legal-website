@@ -35,13 +35,13 @@ const teamMembers = [
     description: "Friznik Bony leads the Immigration Law practice at Octagon Legal." 
   },
   {
-    name: "Estelle Costabile",
-    title: "Legal Assistant",
+    name: "PLACE HOLDER",
+    title: "POSITION",
     legalTitle: "",
     subtitle: "",
     languages: ["English"],
-    image: "/images/IMG_5154_1753926849979.jpg", // Estelle - keeping correct photo
-    description: "Estelle is a Legal Assistant at Octagon Legal and a current Bachelor of Laws student."
+    image: ""
+    description: ""
   }
 ];
 
