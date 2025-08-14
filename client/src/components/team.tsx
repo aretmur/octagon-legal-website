@@ -2,9 +2,10 @@ import { useState } from "react";
 import { X } from "lucide-react";
 
 // Actual team photos - correct assignments
-const williamImage = "/images/william_1754475178903.png"; // William Billings - updated professional headshot
-const aretImage = "/images/aretM_1754475261149.PNG"; // Aret Muradyan - updated professional headshot  
-const friznikImage = "/images/friznik_new.png"; // Friznik (updated professional headshot)
+const williamImage = "/images/william_1754475178903.png";
+const aretImage = "/images/aretM_1754475261149.PNG"; 
+const friznikImage = "/images/friznik_new.png"; 
+const friznikImage = "";
 
 const teamMembers = [
   {
