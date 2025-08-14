@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Scale, Users, Building, Briefcase, Shield } from "lucide-react";
+import { Scale, Users, Building, Home, FileText, Gavel } from "lucide-react";
 
 const practiceAreas = [
   {
