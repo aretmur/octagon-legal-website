@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="mb-4">
               {/* Firm Name Only */}
               <div className="flex flex-col">
-                <h3 className="text-xl font-serif font-normal ml-6">
+                <h3 className="text-xl font-serif font-normal ml-1">
                   <span className="text-gold">O</span>
                   <span className="text-white">ctagon </span>
                   <span className="text-white">L</span>
