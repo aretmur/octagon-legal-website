@@ -113,7 +113,7 @@ These Terms of Service govern your use of legal services provided by Octagon Leg
 • Follow legal advice and instructions
 
 **Payment Terms:** 
-• Fees are payable as outlined in your retainer agreement
+• Fees are payable as outlined in your cost agreement
 • Costs may include court fees, expert witness fees, and disbursements
 • Payment plans may be available upon request
 
@@ -124,7 +124,7 @@ These Terms of Service govern your use of legal services provided by Octagon Leg
 **Scope of Responsibility:** Our liability is limited to:
 • Direct losses arising from proven negligence
 • The amount of professional indemnity insurance coverage
-• Matters specifically within our retainer agreement
+• Matters specifically within our cost agreement
 
 ## Confidentiality
 
@@ -168,7 +168,7 @@ These terms may be updated periodically. Continued use of our services constitut
 
 **⚠️ WARNING:** The information provided on this website and in our materials is for general informational purposes only and does not constitute legal advice. 
 
-**No Attorney-Client Relationship:** Viewing this website or contacting us does not create an attorney-client relationship until a formal retainer agreement is signed.
+**No Lawyer-Client Relationship:** Viewing this website or contacting us does not create an lawyer-client relationship until a formal cost agreement is signed.
 
 **Individual Circumstances:** Every legal matter is unique. Information that may be applicable to one situation may not apply to another. You should not rely on general information to make decisions about your specific legal matters.
 
@@ -214,7 +214,7 @@ These terms may be updated periodically. Continued use of our services constitut
 • Email communications
 • Social media platforms
 
-May not be protected by legal professional privilege until a formal retainer agreement is established.
+May not be protected by legal professional privilege until a formal cost agreement is established.
 
 ## Jurisdictional Limitations
 
