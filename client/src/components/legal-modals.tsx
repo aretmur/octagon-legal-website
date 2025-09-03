@@ -98,7 +98,6 @@ These Terms of Service govern your use of legal services provided by Octagon Leg
 • Family Law disputes
 • Immigration Law issues
 • Workplace and Misconduct matters
-• Crisis Intervention services
 
 **Professional Standards:** Our services are provided in accordance with:
 • Victorian Legal Services Commissioner requirements
