@@ -14,7 +14,7 @@ import ComingSoon from "@/pages/coming-soon";
 
 function Router() {
   // EASY TOGGLE: Change this to true for "Coming Soon" mode
-  const COMING_SOON_MODE = true;
+  const COMING_SOON_MODE = false;
   
   if (COMING_SOON_MODE) {
     return <ComingSoon />;
