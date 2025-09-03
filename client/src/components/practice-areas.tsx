@@ -26,8 +26,6 @@ const practiceAreas: PracticeArea[] = [
       "Police interviews & bail applications",
       "Summary and indictable offences",
       "Family violence (IVOs & breach defence)",
-      "Sexual offences",
-      "White-collar and fraud matters",
       "Traffic offences",
       "Drink and Drug driving",
       "Drug offences",
