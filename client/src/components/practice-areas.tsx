@@ -10,19 +10,12 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-/** Read feature flags from env (default OFF) */
-const FF = {
-  PROPERTY: process.env.NEXT_PUBLIC_FEATURE_PROPERTY === "on",
-  WILLS: process.env.NEXT_PUBLIC_FEATURE_WILLS === "on",
-  INJURY: process.env.NEXT_PUBLIC_FEATURE_INJURY === "on",
-};
-
 type PracticeArea = {
   icon: LucideIcon;
   title: string;
   subtitle?: string;
   services: string[];
-  enabled?: boolean; // computed at build-time from flags
+  enabled?: boolean;
 };
 
 const practiceAreas: PracticeArea[] = [
@@ -82,7 +75,7 @@ const practiceAreas: PracticeArea[] = [
     enabled: true,
   },
 
-  // Feature-flagged (hidden until turned on)
+  // Hidden until you flip enabled: true
   {
     icon: Home,
     title: "Property Law",
@@ -93,7 +86,7 @@ const practiceAreas: PracticeArea[] = [
       "Property development and subdivisions",
       "Title transfers and disputes",
     ],
-    enabled: FF.PROPERTY,
+    enabled: false,
   },
   {
     icon: FileText,
@@ -105,7 +98,7 @@ const practiceAreas: PracticeArea[] = [
       "Contesting a will",
       "Executor and trustee advice",
     ],
-    enabled: FF.WILLS,
+    enabled: false,
   },
   {
     icon: Gavel,
@@ -117,7 +110,7 @@ const practiceAreas: PracticeArea[] = [
       "Medical negligence claims",
       "Institutional abuse claims",
     ],
-    enabled: FF.INJURY,
+    enabled: false,
   },
 ];
 
@@ -139,7 +132,10 @@ export default function PracticeAreas() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
           {visibleAreas.map((area, idx) => (
-            <Card key={idx} className="bg-white shadow-sm hover:shadow-lg transition-shadow h-auto flex flex-col overflow-hidden">
+            <Card
+              key={idx}
+              className="bg-white shadow-sm hover:shadow-lg transition-shadow h-auto flex flex-col overflow-hidden"
+            >
               <CardContent className="p-4 sm:p-6 h-full flex flex-col">
                 <div className="text-center mb-4">
                   <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-navy rounded-full mb-3">
@@ -169,3 +165,4 @@ export default function PracticeAreas() {
     </section>
   );
 }
+
