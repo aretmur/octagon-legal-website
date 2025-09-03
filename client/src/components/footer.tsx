@@ -17,9 +17,7 @@ export default function Footer() {
                   <span className="text-white">L</span>
                   <span className="text-white">egal</span>
                 </h3>
-                <p className="text-xs font-medium text-gold tracking-widest uppercase mt-0.5 ml-0.5">
-                  Barristers & Solicitors
-                </p>
+              
               </div>
             </div>
             
