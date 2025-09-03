@@ -10,8 +10,8 @@ const ladyLawyerImage = "/images/ladyLawyer.jpg";
 const teamMembers = [
   {
     name: "William Billings",
-    title: "Principal",
-    legalTitle: "Barrister & Solicitor",
+    title: "Principal and Co-Founder",
+    legalTitle: "Laywer",
     subtitle: "Criminal Defence, Family Law & Employment Law",
     languages: ["English", "Cantonese", "Mandarin"],
     image: williamImage,
@@ -19,8 +19,8 @@ const teamMembers = [
   },
   {
     name: "Aret Muradyan",
-    title: "Co-Founder",
-    legalTitle: "Barrister & Solicitor",
+    title: "Director and Co-Founder",
+    legalTitle: "Laywer",
     subtitle: "Criminal Defence, Family Law & Personal Injury",
     languages: ["English", "Armenian", "Turkish"],
     image: aretImage,
@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: "Friznik Bony",
     title: "Associate",
-    legalTitle: "Barrister & Solicitor",
+    legalTitle: "Laywer",
     subtitle: "Civil Litigation & Personal Injury",
     languages: ["English"],
     image: friznikImage,
@@ -38,7 +38,7 @@ const teamMembers = [
   {
     name: "Penelope Pitstop",
     title: "Associate",
-    legalTitle: "Barrister & Solicitor",
+    legalTitle: "Laywer",
     subtitle: "Wills and Estates & Property Law",
     languages: ["English"],
     image: ladyLawyerImage,
