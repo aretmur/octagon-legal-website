@@ -75,7 +75,7 @@ const practiceAreas: PracticeArea[] = [
     enabled: true,
   },
 
-  // Hidden until you flip enabled: true
+  // Toggle these on when ready
   {
     icon: Home,
     title: "Property Law",
@@ -117,6 +117,18 @@ const practiceAreas: PracticeArea[] = [
 export default function PracticeAreas() {
   const visibleAreas = practiceAreas.filter((a) => a.enabled);
 
+  // Responsive column scheme auto-picked by count to keep rows centered & clean
+  const colsByCount =
+    visibleAreas.length <= 1
+      ? "grid-cols-1"
+      : visibleAreas.length === 2
+      ? "grid-cols-1 sm:grid-cols-2"
+      : visibleAreas.length === 3
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      : visibleAreas.length === 4
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
+      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4";
+
   return (
     <section id="practice-areas" className="py-responsive-md bg-light-gray">
       <div className="container-responsive">
@@ -130,11 +142,20 @@ export default function PracticeAreas() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
+        <div
+          className={[
+            "grid gap-4 sm:gap-6 lg:gap-8",
+            colsByCount,
+            // Keep the whole grid centered within a comfortable width
+            "max-w-7xl mx-auto",
+            // Center grid tracks when there’s spare space
+            "justify-center",
+          ].join(" ")}
+        >
           {visibleAreas.map((area, idx) => (
             <Card
               key={idx}
-              className="bg-white shadow-sm hover:shadow-lg transition-shadow h-auto flex flex-col overflow-hidden"
+              className="bg-white shadow-sm hover:shadow-lg transition-shadow h-auto flex flex-col overflow-hidden w-full max-w-sm"
             >
               <CardContent className="p-4 sm:p-6 h-full flex flex-col">
                 <div className="text-center mb-4">
@@ -165,4 +186,3 @@ export default function PracticeAreas() {
     </section>
   );
 }
-
