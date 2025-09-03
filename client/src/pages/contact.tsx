@@ -93,7 +93,7 @@ export default function Contact() {
       if (response.ok) {
         toast({
           title: "Inquiry submitted successfully!",
-          description: "Your inquiry has been sent to our team. We'll respond within 1 hour during business hours.",
+          description: "Your inquiry has been sent to our team.",
         });
       } else {
         throw new Error('Failed to send inquiry');
@@ -164,7 +164,7 @@ export default function Contact() {
         <div className="container mx-auto px-4 text-center">
 
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Get expert legal advice when you need it most. We're here to help with your criminal, family, immigration, and workplace law matters.
+            Get expert legal advice when you need it most. <>HR>We're here to help with your criminal, family, immigration, and workplace law matters.
           </p>
         </div>
       </div>
