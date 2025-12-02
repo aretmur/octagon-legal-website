@@ -10,16 +10,6 @@ const testimonials = [
     rating: "⭐⭐⭐⭐⭐"
   },
   {
-    quote: "I had been underpaid and mistreated at work for over a year. No one would take the case — until Octagon's lawyers did. We didn't just win. We sent a message.",
-    name: "DANIEL T.",
-    rating: "⭐⭐⭐⭐⭐"
-  },
-  {
-    quote: "Facing deportation after 12 years in Australia was devastating. Octagon Legal lodged my appeal with precision and care. I'm now a permanent resident. I owe them everything.",
-    name: "LIANG W.",
-    rating: "⭐⭐⭐⭐⭐"
-  },
-  {
     quote: "After being wrongfully arrested, I needed more than a lawyer. I needed someone who believed me. The team at Octagon Legal didn't just fight — they dismantled the case.",
     name: "MARCUS V.",
     rating: "⭐⭐⭐⭐⭐"
@@ -29,16 +19,6 @@ const testimonials = [
     name: "EMMA J.",
     rating: "⭐⭐⭐⭐⭐"
   },
-  {
-    quote: "I was unfairly terminated for standing up to discrimination. Octagon's lawyers didn't hesitate. Within weeks, I had a settlement and my dignity intact.",
-    name: "NAVEEN P.",
-    rating: "⭐⭐⭐⭐⭐"
-  },
-  {
-    quote: "We tried everything to get my mother's partner visa through. Everyone told us no — until Octagon Legal said, 'Leave it with us.' Six months later, she's here.",
-    name: "ARPI K.",
-    rating: "⭐⭐⭐⭐⭐"
-  }
 ];
 
 export default function Testimonials() {
