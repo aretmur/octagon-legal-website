@@ -126,7 +126,6 @@ export default function OctagonLogo({ className = "", size = "md" }: OctagonLogo
           </text>
         </g>
         
-        {/* Subtle Masonic square and compass elements (very subtle) */}
         <g transform="translate(200, 25)" opacity="0.1">
           <circle cx="0" cy="0" r="8" fill="none" stroke="#D69E2E" strokeWidth="1" />
           <path d="M-6,-6 L6,6 M6,-6 L-6,6" stroke="#D69E2E" strokeWidth="1" />
