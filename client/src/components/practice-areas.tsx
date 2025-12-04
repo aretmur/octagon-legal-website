@@ -14,7 +14,8 @@ export default function PracticeAreas() {
   "Appeals, sentence reductions & reopening matters",
   "Assault, affray, threats & violent offence defence",
   "Fraud, deception, dishonesty & white-collar offences",
-],contact",
+],
+      cta: "/contact",
     },
     {
       title: "Family Law",
