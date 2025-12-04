@@ -1,163 +1,127 @@
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Scale,
-  Users,
-  Building,
-  Home,
-  FileText,
-  Gavel,
-  Briefcase,
-  type LucideIcon,
-} from "lucide-react";
-
-type PracticeArea = {
-  icon: LucideIcon;
-  title: string;
-  subtitle?: string;
-  services: string[];
-  enabled?: boolean;
-};
-
-const practiceAreas: PracticeArea[] = [
-  {
-  icon: Scale,
-  title: "Criminal Law",
-  services: [
-    "Police interviews, urgent advice & bail applications",
-    "Representation for summary and indictable offences",
-    "Traffic matters including licence loss and court hearings",
-    "Drink and drug driving charges – defence & negotiation",
-    "Drug possession, trafficking & related offences",
-    "Appeals, sentence reductions and reopening matters",
-  ],
-  enabled: true,
-},
-
-  {
-  icon: Users,
-  title: "Family Law",
-  services: [
-    "Divorce & separation guidance tailored to your situation",
-    "Parenting disputes, consent orders & parenting plan solutions",
-    "Property settlement and division of assets",
-    "Spousal maintenance advice and applications",
-    "Urgent recovery, relocation & high-risk parenting matters",
-    "Family violence considerations linked to parenting or property",
-    "Binding financial agreements (prenup, postnup & cohabitation)",
-    "Child support assessments, disputes & private agreements",
-  ],
-  enabled: true,
-},
-
- {
-  icon: Home,
-  title: "Family Violence & Intervention Orders",
-  services: [
-    "Family Violence Intervention Orders (IVOs) – applications & defence",
-    "Personal Safety Intervention Orders (PSIOs)",
-    "Defending allegations & preparing evidence",
-    "Varying, revoking or extending intervention orders",
-    "Breach of IVO allegations & related criminal matters",
-    "Urgent safety applications and risk assessments",
-    "Representation in Magistrates’ Court hearings",
-    "Negotiated undertakings and consent resolutions",
-    "Police Family Violence Safety Notices – advice & reviews",
-    "Cross-applications and dual-party disputes",
-    "Parenting implications where family violence is alleged",
-    "Support for both respondents and protected persons",
-  ],
-  enabled: true,
-},
-
-  {
-  icon: FileText,
-  title: "Wills & Estates",
-  services: [
-    "Simple and complex Wills tailored to your circumstances",
-    "Testamentary Trust Wills for wealth protection",
-    "Enduring Powers of Attorney (financial, personal & medical)",
-    "Advance Care Directives to plan future medical decisions",
-    "Estate planning strategies to protect family assets",
-    "Executor guidance and trustee support",
-    "Applications for Probate and Letters of Administration",
-    "Estate administration from start to final distribution",
-    "Contesting a Will & estate dispute representation",
-    "Family Provision (Part IV) claims for fair entitlements",
-    "Superannuation death benefit disputes",
-    "Disputes involving informal or invalid Wills",
-    "Mediation and negotiated estate settlements",
-  ],
-  enabled: true,
-},
-
-];
-
-export default function PracticeAreas() {
-  const visibleAreas = practiceAreas.filter((a) => a.enabled);
-
-  // Responsive column scheme auto-picked by count to keep rows centered & clean
-  const colsByCount =
-    visibleAreas.length <= 1
-      ? "grid-cols-1"
-      : visibleAreas.length === 2
-      ? "grid-cols-1 sm:grid-cols-2"
-      : visibleAreas.length === 3
-      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-      : visibleAreas.length === 4
-      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
-      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4";
+iexport default function PracticeAreas() {
+  const areas = [
+    {
+      title: "Criminal Law",
+      icon: "⚖️",
+      description:
+        "Strong, strategic defence for clients facing police investigation, charges, or urgent court matters.",
+      services: [
+        "Police interviews, urgent legal advice & bail applications",
+        "Representation for summary & indictable offences",
+        "Traffic matters including licence loss, speeding & court hearings",
+        "Drink & drug driving defence, negotiations & charge reduction",
+        "Drug possession, trafficking & related allegations",
+        "Appeals, sentence reductions & reopening matters",
+      ],
+      cta: "/contact",
+    },
+    {
+      title: "Family Law",
+      icon: "👨‍👩‍👧",
+      description:
+        "Clear, decisive guidance through family breakdown, parenting disputes, and financial separation.",
+      services: [
+        "Divorce & separation tailored advice",
+        "Parenting disputes, consent orders & parenting plan solutions",
+        "Property settlement: asset division, contributions & future needs",
+        "Spousal maintenance advice & applications",
+        "Urgent recovery, relocation & high-risk parenting matters",
+        "Family violence considerations linked to parenting/property",
+        "Binding financial agreements (prenup, postnup, cohabitation)",
+        "Child support assessments, disputes & private agreements",
+      ],
+      cta: "/contact",
+    },
+    {
+      title: "Family Violence & Intervention Orders",
+      icon: "🏠",
+      description:
+        "Strong representation for both respondents and protected persons across all Intervention Order matters.",
+      services: [
+        "Family Violence Intervention Orders (IVOs) – applications & defence",
+        "Personal Safety Intervention Orders (PSIOs)",
+        "Defending allegations & preparing evidence",
+        "Varying, revoking or extending intervention orders",
+        "Breach of IVO allegations & related criminal matters",
+        "Urgent safety applications & risk assessments",
+        "Representation in Magistrates’ Court hearings",
+        "Negotiated undertakings & consent resolutions",
+        "Police Family Violence Safety Notices – advice & review",
+        "Cross-applications & dual-party disputes",
+        "Parenting implications where family violence is alleged",
+        "Strategic advice for both respondents & protected persons",
+      ],
+      cta: "/contact",
+    },
+    {
+      title: "Wills & Estates",
+      icon: "📜",
+      description:
+        "Future-proof estate planning and expert assistance with probate, disputes and contested wills.",
+      services: [
+        "Simple & complex Wills tailored to your needs",
+        "Testamentary Trust Wills for asset protection",
+        "Enduring Powers of Attorney (financial, medical, personal)",
+        "Advance Care Directives for medical decision-making",
+        "Estate planning strategies to protect family assets",
+        "Executor guidance & trustee support",
+        "Applications for Probate & Letters of Administration",
+        "Estate administration from start to finish",
+        "Contesting a Will & estate dispute representation",
+        "Family Provision (Part IV) claims",
+        "Superannuation death benefit disputes",
+        "Disputes involving informal or invalid Wills",
+        "Estate mediation & negotiated settlements",
+      ],
+      cta: "/contact",
+    },
+  ];
 
   return (
-    <section id="practice-areas" className="py-responsive-md bg-light-gray">
-      <div className="container-responsive">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-responsive-3xl font-serif font-bold text-navy mb-2 sm:mb-4">
-            Practice Areas
-          </h2>
-          <p className="text-responsive-sm text-gray-600 max-w-4xl mx-auto">
-            We provide comprehensive legal services across multiple practice areas, delivering
-            strategic solutions tailored to your specific needs.
-          </p>
-        </div>
+    <section id="practice-areas" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6 lg:px-12">
+        <h2 className="text-4xl font-serif font-bold text-center text-navy mb-6">
+          Our Practice Areas
+        </h2>
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
+          Octagon Legal provides strong advocacy, clear advice, and tailored
+          legal strategies for your most serious and personal matters.
+        </p>
 
-        <div
-          className={[
-            "grid gap-4 sm:gap-6 lg:gap-8",
-            colsByCount,
-            // Keep the whole grid centered within a comfortable width
-            "max-w-7xl mx-auto",
-            // Center grid tracks when there’s spare space
-            "justify-center",
-          ].join(" ")}
-        >
-          {visibleAreas.map((area, idx) => (
-            <Card
+        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
+          {areas.map((area, idx) => (
+            <div
               key={idx}
-              className="bg-white shadow-sm hover:shadow-lg transition-shadow h-auto flex flex-col overflow-hidden w-full max-w-sm"
+              className="bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 p-8 flex flex-col"
             >
-              <CardContent className="p-4 sm:p-6 h-full flex flex-col">
-                <div className="text-center mb-4">
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-navy rounded-full mb-3">
-                    <area.icon className="text-white w-6 h-6 sm:w-7 sm:h-7" />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-serif font-bold text-navy mb-2 leading-tight">
-                    {area.title}
-                  </h3>
-                </div>
+              <div className="text-5xl mb-4 text-center">{area.icon}</div>
+              <h3 className="text-2xl font-serif font-bold text-navy mb-2 text-center">
+                {area.title}
+              </h3>
 
-                <div className="flex-1">
-                  <h4 className="text-base font-semibold text-navy mb-3">Core Services:</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    {area.services.map((service, sidx) => (
-                      <li key={sidx} className="flex items-start">
-                        <span className="text-gold mr-2 flex-shrink-0">•</span>
-                        <span className="leading-tight text-sm">{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
+              <p className="text-gray-600 text-sm mb-4 text-center">
+                {area.description}
+              </p>
+
+              <h4 className="text-lg font-semibold text-navy mt-4 mb-3">
+                Core Services:
+              </h4>
+              <ul className="space-y-2 text-gray-700 text-sm mb-6">
+                {area.services.map((service, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-gold mt-1">•</span>
+                    <span>{service}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href={area.cta}
+                className="mt-auto inline-block text-center bg-navy text-white py-2 px-4 rounded-lg hover:bg-gold hover:text-navy transition-colors"
+              >
+                Book a Consultation →
+              </a>
+            </div>
           ))}
         </div>
       </div>
