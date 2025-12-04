@@ -16,7 +16,7 @@ const Banner: React.FC = () => {
           fontFamily: 'Lato, sans-serif',
           color: '#f4f4f4'
         }}>
-          Criminal, Family, Employment & Immigration Law
+          Criminal, Family, IVOs, Wills and Estates
         </p>
       </div>
     </section>
