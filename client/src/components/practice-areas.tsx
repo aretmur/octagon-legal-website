@@ -5,16 +5,16 @@ export default function PracticeAreas() {
       icon: "⚖️",
       description:
         "Strong, strategic defence for clients facing police investigation, charges, or urgent court matters.",
-     services: [
-  "Police interviews, urgent legal advice & bail applications",
-  "Representation for summary & indictable offences",
-  "Traffic matters including licence loss, speeding & court hearings",
-  "Drink & drug driving defence, negotiations & charge reduction",
-  "Drug possession, trafficking & related allegations",
-  "Appeals, sentence reductions & reopening matters",
-  "Assault, affray, threats & violent offence defence",
-  "Fraud, deception, dishonesty & white-collar offences",
-],
+      services: [
+        "Police interviews, urgent legal advice & bail applications",
+        "Representation for summary & indictable offences",
+        "Traffic matters including licence loss, speeding & court hearings",
+        "Drink & drug driving defence, negotiations & charge reduction",
+        "Drug possession, trafficking & related allegations",
+        "Appeals, sentence reductions & reopening matters",
+        "Assault, affray, threats & violent offence defence",
+        "Fraud, deception, dishonesty & white-collar offences",
+      ],
       cta: "/contact",
     },
     {
@@ -35,41 +35,39 @@ export default function PracticeAreas() {
       cta: "/contact",
     },
     {
-  title: "Family Violence & IVOs",
-  icon: "🏠",
-  description:
-    "Strong, strategic representation for both respondents and protected persons in all Intervention Order matters.",
-  services: [
-  "Family Violence Intervention Orders (IVOs) – applications & defence",
-  "Personal Safety Intervention Orders (PSIOs)",
-  "Defending allegations & preparing evidence",
-  "Varying, revoking or extending intervention orders",
-  "Breach of IVO allegations & related criminal matters",
-  "Urgent safety applications & risk assessments",
-  "Representation in Magistrates’ Court hearings",
-  "Safety planning, referrals & coordinated support pathways",
-],
-  cta: "/contact",
-},
-
+      title: "Family Violence & IVO Matters",
+      icon: "🏠",
+      description:
+        "Strong, strategic representation for both respondents and protected persons in all Intervention Order matters.",
+      services: [
+        "Family Violence Intervention Orders (IVOs) – applications & defence",
+        "Personal Safety Intervention Orders (PSIOs)",
+        "Defending allegations & preparing evidence",
+        "Varying, revoking or extending intervention orders",
+        "Breach of IVO allegations & related criminal matters",
+        "Urgent safety applications & risk assessments",
+        "Representation in Magistrates’ Court hearings",
+        "Safety planning, referrals & coordinated support pathways",
+      ],
+      cta: "/contact",
+    },
     {
-  title: "Wills & Estates",
-  icon: "📜",
-  description:
-    "Future-focused estate planning and expert assistance with probate, disputes, and contested wills.",
-  services: [
-    "Simple & complex Wills tailored to your needs",
-    "Testamentary Trust Wills",
-    "Enduring Powers of Attorney (financial, medical, personal)",
-    "Probate & Letters of Administration",
-    "Estate administration from start to finish",
-    "Contesting a Will & Family Provision (Part IV) claims",
-    "Superannuation death benefit disputes",
-    "Mediation & estate dispute resolution",
-  ],
-  cta: "/contact",
-},
-
+      title: "Wills & Estates",
+      icon: "📜",
+      description:
+        "Future-focused estate planning and expert assistance with probate, disputes, and contested wills.",
+      services: [
+        "Simple & complex Wills tailored to your needs",
+        "Testamentary Trust Wills",
+        "Enduring Powers of Attorney (financial, medical, personal)",
+        "Probate & Letters of Administration",
+        "Estate administration from start to finish",
+        "Contesting a Will & Family Provision (Part IV) claims",
+        "Superannuation death benefit disputes",
+        "Mediation & estate dispute resolution",
+      ],
+      cta: "/contact",
+    },
   ];
 
   return (
