@@ -37,23 +37,33 @@ As a former Victoria Police Sergeant, he understands how the justice system work
 Clients value Aret for his calm, clear approach and ability to cut through red tape with precision.`,
   },
   {
-    name: "Penelope Pitstop",
-    role: "Associate",
-    legalTitle: "Lawyer",
-    specialties: "Wills and Estates & Property Law",
-    languages: ["English"],
-    image: ladyLawyerImage,
-    bio: `Penelope is a specialist in Wills, Estates and Property Law.`,
-  },
-  {
-    name: "Judith Chromeedge",
-    role: "Associate",
-    legalTitle: "Lawyer",
-    specialties: "Wills and Estates & Property Law",
-    languages: ["English"],
-    image: ladyLawyerImage,
-    bio: `Penelope is a specialist in Wills, Estates and Property Law.`,
-  },
+  name: "Penelope Pitstop",
+  role: "Associate Lawyer",
+  legalTitle: "Lawyer",
+  specialties: "Wills & Estates • Property Law",
+  languages: ["English"],
+  image: ladyLawyerImage,
+  bio: `Penelope Pitstop is a dedicated Wills & Estates and Property Law practitioner with a strong focus on clarity, precision and client care.
+
+She advises on estate planning, complex wills, probate applications, estate disputes and property transactions. Penelope is known for her steady, reassuring approach and her ability to guide clients through emotionally sensitive matters with confidence and structure.
+
+Whether preparing future-focused documents or navigating contested estate matters, Penelope delivers clear, practical legal solutions tailored to each client’s circumstances.`,
+},
+
+{
+  name: "Judith Chromeedge",
+  role: "Paralegal & Client Support Officer",
+  legalTitle: "Paralegal",
+  specialties: "Client Support • Document Preparation • File Management",
+  languages: ["English"],
+  image: ladyLawyerImage,
+  bio: `Judith Chromeedge is the backbone of day-to-day client and file management at Octagon Legal.
+
+As our Paralegal & Client Support Officer, Judith assists with document preparation, correspondence, court filing, matter coordination and client communication. Her attention to detail, organisation and calm problem-solving ensure cases run smoothly behind the scenes.
+
+Judith is often the first point of contact for clients and plays a key role in ensuring they feel supported, informed and looked after throughout the legal process.`,
+},
+
 ];
 
 // FILTER ENABLED MEMBERS
