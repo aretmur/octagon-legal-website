@@ -44,7 +44,15 @@ Clients value Aret for his calm, clear approach and ability to cut through red t
     languages: ["English"],
     image: ladyLawyerImage,
     bio: `Penelope is a specialist in Wills, Estates and Property Law.`,
-    enabled: false, // Disabled but available for future use
+  },
+  {
+    name: "Judith Chromeedge",
+    role: "Associate",
+    legalTitle: "Lawyer",
+    specialties: "Wills and Estates & Property Law",
+    languages: ["English"],
+    image: ladyLawyerImage,
+    bio: `Penelope is a specialist in Wills, Estates and Property Law.`,
   },
 ];
 
