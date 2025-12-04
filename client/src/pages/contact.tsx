@@ -164,7 +164,7 @@ export default function Contact() {
         <div className="container mx-auto px-4 text-center">
 
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Get expert legal advice when you need it most. We're here to help with your criminal, family, immigration, and workplace law matters.
+            Get expert legal advice when you need it most. We're here to help with your criminal, family, IVO, and Wills and Estates matters.
           </p>
         </div>
       </div>
