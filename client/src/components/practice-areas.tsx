@@ -33,48 +33,40 @@ export default function PracticeAreas() {
       cta: "/contact",
     },
     {
-      title: "Family Violence & Intervention Orders",
-      icon: "🏠",
-      description:
-        "Strong representation for both respondents and protected persons across all Intervention Order matters.",
-      services: [
-        "Family Violence Intervention Orders (IVOs) – applications & defence",
-        "Personal Safety Intervention Orders (PSIOs)",
-        "Defending allegations & preparing evidence",
-        "Varying, revoking or extending intervention orders",
-        "Breach of IVO allegations & related criminal matters",
-        "Urgent safety applications & risk assessments",
-        "Representation in Magistrates’ Court hearings",
-        "Negotiated undertakings & consent resolutions",
-        "Police Family Violence Safety Notices – advice & review",
-        "Cross-applications & dual-party disputes",
-        "Parenting implications where family violence is alleged",
-        "Strategic advice for both respondents & protected persons",
-      ],
-      cta: "/contact",
-    },
+  title: "Family Violence & Intervention Orders",
+  icon: "🏠",
+  description:
+    "Strong, strategic representation for both respondents and protected persons in all Intervention Order matters.",
+  services: [
+    "Family Violence Intervention Orders (IVOs) – applications & defence",
+    "Personal Safety Intervention Orders (PSIOs)",
+    "Breach of IVO allegations & related criminal matters",
+    "Varying, revoking or extending intervention orders",
+    "Cross-applications & dual-party disputes",
+    "Representation in Magistrates’ Court hearings",
+    "Support and guidance for both respondents & protected persons",
+  ],
+  cta: "/contact",
+},
+
     {
-      title: "Wills & Estates",
-      icon: "📜",
-      description:
-        "Future-proof estate planning and expert assistance with probate, disputes and contested wills.",
-      services: [
-        "Simple & complex Wills tailored to your needs",
-        "Testamentary Trust Wills for asset protection",
-        "Enduring Powers of Attorney (financial, medical, personal)",
-        "Advance Care Directives for medical decision-making",
-        "Estate planning strategies to protect family assets",
-        "Executor guidance & trustee support",
-        "Applications for Probate & Letters of Administration",
-        "Estate administration from start to finish",
-        "Contesting a Will & estate dispute representation",
-        "Family Provision (Part IV) claims",
-        "Superannuation death benefit disputes",
-        "Disputes involving informal or invalid Wills",
-        "Estate mediation & negotiated settlements",
-      ],
-      cta: "/contact",
-    },
+  title: "Wills & Estates",
+  icon: "📜",
+  description:
+    "Future-focused estate planning and expert assistance with probate, disputes, and contested wills.",
+  services: [
+    "Simple & complex Wills tailored to your needs",
+    "Testamentary Trust Wills",
+    "Enduring Powers of Attorney (financial, medical, personal)",
+    "Probate & Letters of Administration",
+    "Estate administration from start to finish",
+    "Contesting a Will & Family Provision (Part IV) claims",
+    "Superannuation death benefit disputes",
+    "Mediation & estate dispute resolution",
+  ],
+  cta: "/contact",
+},
+
   ];
 
   return (
