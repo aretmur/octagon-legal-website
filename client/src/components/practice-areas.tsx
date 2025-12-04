@@ -35,7 +35,7 @@ export default function PracticeAreas() {
       cta: "/contact",
     },
     {
-      title: "Family Violence & IVO Matters",
+      title: "IVO Matters",
       icon: "🏠",
       description:
         "Strong, strategic representation for both respondents and protected persons in all Intervention Order matters.",
