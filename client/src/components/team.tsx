@@ -1,286 +1,162 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 
-// Actual team photos - correct assignments
+// IMAGE FILES
 const williamImage = "/images/william_1754475178903.png";
 const aretImage = "/images/aretM_1754475261149.PNG";
 const ladyLawyerImage = "/images/ladyLawyer.jpg";
 
+// ==============================
+// TEAM DATA (EDIT HERE ONLY)
+// ==============================
 const teamMembers = [
   {
     name: "William Billings",
-    title: "Principal and Co-Founder",
+    role: "Principal and Co-Founder",
     legalTitle: "Lawyer",
-    subtitle: "Criminal Defence, Family Violence Law",
+    specialties: "Criminal Defence, Family Violence Law",
     languages: ["English", "Cantonese", "Mandarin"],
     image: williamImage,
-    description:
-      "William Billings isn't your typical lawyer. He's calm under pressure, sharp on the detail and focused on getting results.\n\nWhether it's challenging a weak prosecution, cross-examining a difficult witness, or navigating a complex tribunal matter, William brings a clear head and a steady hand.\n\nClients value his straight talking approach, strategic thinking, and ability to cut through legal noise. He began his legal career at Midwinters Lawyers, working across criminal defence and administrative / employment disputes.\n\nIf you're in a tough spot and need someone who knows how to fight smart — get William to sort out your legal matters.",
+    bio: `William Billings isn't your typical lawyer. He's calm under pressure, sharp on the detail and focused on getting results.
+
+Whether it's challenging a weak prosecution, cross-examining a difficult witness, or navigating a complex tribunal matter, William brings a clear head and a steady hand.
+
+Clients value his straight talking approach, strategic thinking, and ability to cut through legal noise.`,
   },
   {
     name: "Aret Muradyan",
-    title: "Director and Co-Founder",
+    role: "Director and Co-Founder",
     legalTitle: "Lawyer",
-    subtitle: "Family Law, Wills & Estates",
+    specialties: "Family Law, Wills & Estates",
     languages: ["English", "Armenian", "Turkish"],
     image: aretImage,
-    description:
-      "Aret brings over 30 years of real world experience to the table, both in law enforcement and in the courtroom.\n\nAs a former Victoria Police Sergeant, he understands how the justice system works on the ground and behind the scenes. Aret focuses on criminal defence, police discipline and legal matters affecting first responders, emergency service workers and government employees.\n\nHe's a subject matter expert on use-of-force incidents and workplace disputes in high-pressure environments. Clients value Aret for his calm clear approach and deep understanding of how institutions operate.\n\nHe knows how to cut through red tape, challenge unfair decisions and build strong, strategic defences when your career or reputation is on the line.",
+    bio: `Aret brings over 30 years of real world experience to the table, both in law enforcement and in the courtroom.
+
+As a former Victoria Police Sergeant, he understands how the justice system works — operationally, institutionally and strategically.
+
+Clients value Aret for his calm, clear approach and ability to cut through red tape with precision.`,
   },
   {
     name: "Penelope Pitstop",
-    title: "Associate",
+    role: "Associate",
     legalTitle: "Lawyer",
-    subtitle: "Wills and Estates & Property Law",
+    specialties: "Wills and Estates & Property Law",
     languages: ["English"],
     image: ladyLawyerImage,
-    description: "Wills and Estates & Property Law specialist.",
-    enabled: false,
+    bio: `Penelope is a specialist in Wills, Estates and Property Law.`,
+    enabled: false, // Disabled but available for future use
   },
 ];
 
+// FILTER ENABLED MEMBERS
+const activeMembers = teamMembers.filter((m) => m.enabled !== false);
+
+// ==============================
+// COMPONENT
+// ==============================
 export default function Team() {
-  const [selectedMember, setSelectedMember] =
-    useState<typeof teamMembers[0] | null>(null);
+  const [open, setOpen] = useState(null as any);
 
   return (
-    <section id="our-team" className="py-responsive-md bg-white">
-      <div className="container-responsive">
-        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-          <h2 className="text-responsive-3xl font-serif font-bold text-navy mb-2 sm:mb-4">
+    <section id="our-team" className="py-20 bg-white">
+      <div className="container mx-auto px-6 lg:px-12">
+
+        {/* SECTION HEADER */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-serif font-bold text-navy mb-3">
             Our Exceptional Team
           </h2>
-          {/* Four Features */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12">
-            <Feature
-              title="Experienced Legal Counsel"
-              text="Our team brings decades of combined experience across all practice areas."
-              icon={
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              }
-            />
-
-            <Feature
-              title="Client-Centred Approach"
-              text="We prioritise your needs and provide personalised legal strategies."
-              icon={
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              }
-            />
-
-            <Feature
-              title="Proven Results"
-              text="Our track record demonstrates consistent success for our clients."
-              icon={
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                />
-              }
-            />
-
-            <Feature
-              title="Responsive Service"
-              text="We believe in open communication and timely responses to all inquiries."
-              icon={
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 9 0 0118 0z"
-                />
-              }
-            />
-          </div>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Experienced, strategic and client-focused legal counsel across all major practice areas.
+          </p>
         </div>
 
-        {/* Team Members */}
-        <div className="grid-responsive-team gap-4 sm:gap-6 lg:gap-8 max-w-5xl mx-auto">
-          {teamMembers.map((member, index) => (
+        {/* TEAM GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {activeMembers.map((m, i) => (
             <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-gold/20"
+              key={i}
+              className="bg-white shadow-md border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer"
+              onClick={() => setOpen(m)}
             >
-              <div className="p-responsive-sm">
-                <div className="flex-responsive-col gap-3 sm:gap-4 items-center sm:items-start">
-                  <div className="flex-shrink-0">
-                    <img
-                      src={member.image}
-                      alt={`${member.name} - ${member.title}`}
-                      className={`w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-full shadow-md border-3 border-gold/20 cursor-pointer hover:border-gold transition-colors ${
-                        member.name === "Aret Muradyan"
-                          ? "object-center"
-                          : "object-top"
-                      }`}
-                      style={
-                        member.name === "Aret Muradyan"
-                          ? { objectPosition: "center", transform: "translateY(3px)" }
-                          : {}
-                      }
-                      onClick={() => setSelectedMember(member)}
-                    />
-                  </div>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
 
-                  <div className="flex-1 mobile-center">
-                    <button
-                      onClick={() => setSelectedMember(member)}
-                      className="text-responsive-base font-serif font-bold text-navy mb-1 hover:text-gold transition-colors cursor-pointer block"
-                    >
-                      {member.name}
-                    </button>
+                {/* PHOTO */}
+                <img
+                  src={m.image}
+                  alt={m.name}
+                  className="w-24 h-24 rounded-full object-cover border-2 border-gray-200"
+                />
 
-                    <p className="text-gold font-semibold text-sm sm:text-base mb-1">
-                      {member.title}
-                    </p>
+                {/* TEXT */}
+                <div className="flex-1 text-center sm:text-left">
+                  <h3 className="text-xl font-serif font-bold text-navy">{m.name}</h3>
+                  <p className="text-gold font-semibold">{m.role}</p>
+                  <p className="text-gray-600 text-sm mb-1">{m.legalTitle}</p>
+                  <p className="text-gray-700 text-sm italic mb-2">{m.specialties}</p>
 
-                    {member.legalTitle && (
-                      <p className="text-gray-600 font-medium text-xs sm:text-sm mb-1 sm:mb-2">
-                        {member.legalTitle}
-                      </p>
-                    )}
-
-                    {member.subtitle && (
-                      <p className="text-gray-700 text-xs sm:text-sm mb-1 sm:mb-2 leading-tight">
-                        {member.subtitle}
-                      </p>
-                    )}
-
-                    {member.languages && (
-                      <div className="mb-2 sm:mb-3">
-                        <div className="flex flex-wrap gap-1 justify-center sm:justify-start">
-                          {member.languages.map((lang, langIndex) => (
-                            <span
-                              key={langIndex}
-                              className="inline-block bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium"
-                            >
-                              {lang}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    <button
-                      onClick={() => setSelectedMember(member)}
-                      className="inline-flex items-center text-gold font-medium text-xs sm:text-sm hover:text-navy transition-colors group"
-                    >
-                      View Full Profile
-                      <span className="ml-1 group-hover:translate-x-1 transition-transform">
-                        →
+                  {/* LANGUAGES */}
+                  <div className="flex flex-wrap justify-center sm:justify-start gap-1 mb-2">
+                    {m.languages.map((lang, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium"
+                      >
+                        {lang}
                       </span>
-                    </button>
+                    ))}
                   </div>
+
+                  <span className="text-gold text-sm font-medium hover:text-navy transition">
+                    View Full Profile →
+                  </span>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Modal */}
-        {selectedMember && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
-            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="p-responsive-sm relative">
-                <button
-                  onClick={() => setSelectedMember(null)}
-                  className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-500 hover:text-gray-700 transition-colors z-10"
-                >
-                  <X className="w-5 h-5 sm:w-6 sm:h-6" />
-                </button>
+        {/* MODAL */}
+        {open && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-2xl w-full overflow-hidden shadow-xl">
 
-                <div className="flex-responsive-col gap-4 sm:gap-6 mb-4 sm:mb-6">
-                  <div className="flex-shrink-0">
-                    <img
-                      src={selectedMember.image}
-                      alt={`${selectedMember.name} - ${selectedMember.title}`}
-                      className={`w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover rounded-lg shadow-lg border-4 border-gray-200 mx-auto ${
-                        selectedMember.name === "Aret Muradyan"
-                          ? "object-center"
-                          : "object-top"
-                      }`}
-                      style={
-                        selectedMember.name === "Aret Muradyan"
-                          ? { objectPosition: "center", transform: "translateY(6px)" }
-                          : {}
-                      }
-                    />
-                  </div>
+              {/* CLOSE BUTTON */}
+              <button
+                className="absolute top-4 right-4 text-gray-600 hover:text-black"
+                onClick={() => setOpen(null)}
+              >
+                <X size={22} />
+              </button>
 
-                  <div className="flex-1 mobile-center">
-                    <h3 className="text-responsive-2xl font-serif font-bold text-navy mb-1 sm:mb-2">
-                      {selectedMember.name}
-                    </h3>
+              <div className="p-8">
+                <div className="flex flex-col items-center mb-6">
 
-                    <p className="text-gold font-semibold mb-1 text-responsive-base">
-                      {selectedMember.title}
-                    </p>
+                  <img
+                    src={open.image}
+                    className="w-40 h-40 rounded-full object-cover border-4 border-gray-200 shadow-md mb-4"
+                  />
 
-                    {selectedMember.legalTitle && (
-                      <p className="text-gold font-bold text-responsive-base mb-1 sm:mb-2">
-                        {selectedMember.legalTitle}
-                      </p>
-                    )}
+                  <h3 className="text-3xl font-serif font-bold text-navy">
+                    {open.name}
+                  </h3>
+                  <p className="text-gold font-semibold text-lg">{open.role}</p>
+                  <p className="text-gray-700 text-base">{open.specialties}</p>
 
-                    {selectedMember.subtitle && (
-                      <p className="text-gray-700 font-medium text-responsive-xs mb-1 sm:mb-2 italic">
-                        {selectedMember.subtitle}
-                      </p>
-                    )}
-
-                    {selectedMember.languages && (
-                      <div className="mb-3 sm:mb-4">
-                        <p className="text-blue-600 font-medium text-responsive-xs">
-                          Languages: {selectedMember.languages.join(", ")}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-
-                <div className="prose prose-gray max-w-none">
-                  <p className="text-gray-700 leading-relaxed text-responsive-xs text-justify whitespace-pre-line">
-                    {selectedMember.description}
+                  <p className="text-blue-700 text-sm mt-2">
+                    Languages: {open.languages.join(", ")}
                   </p>
                 </div>
+
+                <p className="text-gray-700 whitespace-pre-line leading-relaxed text-justify">
+                  {open.bio}
+                </p>
               </div>
             </div>
           </div>
         )}
+
       </div>
     </section>
   );
 }
-
-function Feature({ title, text, icon }: any) {
-  return (
-    <div className="text-center group">
-      <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 bg-navy rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-gold transition-colors duration-300">
-        <svg
-          className="w-8 h-8 sm:w-10 sm:h-10 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          {icon}
-        </svg>
-      </div>
-      <h3 className="text-responsive-lg font-serif font-bold text-navy mb-2 sm:mb-3">
-        {title}
-      </h3>
-      <p className="text-responsive-xs text-gray-600 leading-relaxed">{text}</p>
-    </div>
-  );
-}
-
