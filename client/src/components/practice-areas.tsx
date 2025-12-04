@@ -73,10 +73,7 @@ export default function PracticeAreas() {
         <h2 className="text-4xl font-serif font-bold text-center text-navy mb-6">
           Our Practice Areas
         </h2>
-        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-          Octagon Legal provides strong advocacy, clear advice for your most serious and personal matters.
-        </p>
-
+        
         <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
           {areas.map((area, idx) => (
             <div
