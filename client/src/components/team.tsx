@@ -50,7 +50,7 @@ export default function Team() {
           <h2 className="text-responsive-3xl font-serif font-bold text-navy mb-2 sm:mb-4">
             Our Exceptional Team
           </h2>
-    
+<HR></HR>    
 
           {/* Four Features */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-12">
