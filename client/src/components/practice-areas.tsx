@@ -1,4 +1,4 @@
-iexport default function PracticeAreas() {
+export default function PracticeAreas() {
   const areas = [
     {
       title: "Criminal Law",
