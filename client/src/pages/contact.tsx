@@ -400,14 +400,14 @@ export default function Contact() {
   <MapPin className="w-6 h-6 text-gold mt-1" />
   
   <div>
-    <h4 className="font-serif font-bold text-navy mb-2">Office</h4>
+    <h4 className="font-serif font-bold text-navy mb-2">Office</h4> <p className="mt-1 text-gray-600 italic">
+      Consultations by appointment only
+    </p>
     <p>
       Level 1, 123 Collins Street<br />
       Melbourne VIC 3000
     </p>
-    <p className="mt-1 text-gray-600 italic">
-      Consultations by appointment only
-    </p>
+    
   </div>
 </div>
 
