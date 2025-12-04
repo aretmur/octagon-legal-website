@@ -272,8 +272,8 @@ export default function Contact() {
                       <SelectContent>
                         <SelectItem value="criminal">Criminal Law</SelectItem>
                         <SelectItem value="family">Family Law</SelectItem>
-                        <SelectItem value="immigration">Immigration Law</SelectItem>
-                        <SelectItem value="employment">Employment & Workplace Law</SelectItem>
+                        <SelectItem value="IVO">IVO matter</SelectItem>
+                        <SelectItem value="Wills and Estates">Wills and Estates</SelectItem>
                         <SelectItem value="other">Other Legal Matter</SelectItem>
                       </SelectContent>
                     </Select>
@@ -396,17 +396,20 @@ export default function Contact() {
                   </div>
 
 
-
-                  <div className="flex items-start gap-4">
-                    <MapPin className="w-6 h-6 text-gold mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Office</h4>
-                      <p className="text-gray-600">
-                        Level 1, 123 Collins Street<br />
-                        Melbourne VIC 3000
-                      </p>
-                    </div>
-                  </div>
+<div className="flex items-start gap-4">
+  <MapPin className="w-6 h-6 text-gold mt-1" />
+  
+  <div>
+    <h4 className="font-serif font-bold text-navy mb-2">Office</h4>
+    <p>
+      Level 1, 123 Collins Street<br />
+      Melbourne VIC 3000
+    </p>
+    <p className="mt-1 text-gray-600 italic">
+      Consultations by appointment only
+    </p>
+  </div>
+</div>
 
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-gold mt-1" />
