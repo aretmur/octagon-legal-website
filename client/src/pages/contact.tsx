@@ -467,7 +467,6 @@ export default function Contact() {
                 </div>
               </CardContent>
             </Card>
-
             {/* Emergency Notice */}
             <Card className="shadow-xl border-l-4 border-l-red-500">
               <CardContent className="p-6">
